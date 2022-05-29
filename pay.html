@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vehicle Rental System</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="css/nunito-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="css/pay.css"/>
+</head>
+<body>
+	<div class="page-content">
+		<div class="wizard-v5-content">
+			<div class="wizard-form">
+			<form class="form-register" id="form-register" action="razorpay.html" method="post">
+		        	
+		    
+		        	<div id="form-total">
+		        		<!-- SECTION 1 -->
+			            <h2>
+			            	<span class="step-icon"><i class="zmdi zmdi-check"></i></span>
+			            	<span class="step-text">Personal Information</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+								<div class="form-row">
+									<div class="form-holder">
+										<label for="first_name">First Name</label>
+										<input type="text" placeholder="ex: Laura" class="form-control" id="first_name" name="first_name">
+									</div>
+									<div class="form-holder">
+										<label for="last_name">Last Name</label>
+										<input type="text" placeholder="ex: Vaughn" class="form-control" id="last_name" name="last_name">
+									</div>
+								</div>
+								<div class="form-row">
+									<div id="radio">
+										<label for="gender">Gender:</label>
+										<input type="radio" name="gender" value="male" > Male
+  										<input type="radio" name="gender" value="female"> Female
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="address">Address Location</label>
+										<input type="text" placeholder="ex: NH-45, Chandigarh, INDIA" class="form-control" id="address" name="address">
+										<span><i class="zmdi zmdi-pin"></i></span>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-3">
+										<label for="phone">Phone Number</label>
+										<input type="text" placeholder="ex: +123 500 7300" class="form-control" id="phone" name="phone">
+									</div>
+									<div class="form-holder">
+										<label for="code">Zip Code</label>
+										<input type="text" class="form-control" id="code" name="code">
+									</div>
+								</div>
+								<div class="form-row form-row-date">
+									<div class="form-holder form-holder-2">
+										<label for="date" class="special-label">Date of Birth:</label>
+										<select name="date" id="date" class="form-control">
+											<option value="1" selected>1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+											<option value="13">13</option>
+											<option value="14">14</option>
+											<option value="15" >15</option>
+											<option value="16">16</option>
+											<option value="17">17</option>
+											<option value="18">18</option>
+											<option value="19">19</option>
+											<option value="20">20</option>
+											<option value="21">21</option>
+											<option value="22">22</option>
+											<option value="23">23</option>
+											<option value="24">24</option>
+											<option value="25">25</option>
+											<option value="26">26</option>
+											<option value="27">27</option>
+											<option value="28">28</option>
+											<option value="29">29</option>
+											<option value="30">30</option>
+											<option value="31">31</option>
+
+										</select>
+										<select name="month" id="month" class="form-control">
+											<option value="Jan" selected>Jan</option>
+											<option value="Feb">Feb</option>
+											<option value="Mar">Mar</option>
+											<option value="Apr">Apr</option>
+											<option value="May">May</option>
+											<option value="Jun">Jun</option>
+											<option value="Jul">Jul</option>
+											<option value="Aug">Aug</option>
+											<option value="Sep">Sep</option>
+											<option value="Oct">Oct</option>
+											<option value="Nov">Nov</option>
+											<option value="Dec">Dec</option>
+										</select>
+										<select name="year" id="year" class="form-control">
+											<option value="2002" selected>2002</option>
+											<option value="2001">2001</option>
+											<option value="2000">2000</option>
+											<option value="1999">1999</option>
+											<option value="1999">1999</option>
+											<option value="1998">1998</option>
+											<option value="1997">1997</option>
+											<option value="1996">1996</option>
+											<option value="1995">1995</option>
+											<option value="1994">1994</option>
+											<option value="1993">1993</option>
+											<option value="1992">1992</option>
+											<option value="1991">1991</option>
+											<option value="1990">1990</option>
+											<option value="1989">1989</option>
+											<option value="1988">1987</option>
+											<option value="1987">1987</option>
+											<option value="1986">1986</option>
+											<option value="1985">1985</option>
+											<option value="1984">1984</option>
+											<option value="1983">1983</option>
+											<option value="1982">1982</option>
+											<option value="1981">1981</option>
+											<option value="1980">1980</option>
+											<option value="1979">1979</option>
+											<option value="1978">1977</option>
+											<option value="1977">1977</option>
+											<option value="1976">1976</option>
+											<option value="1975">1975</option>
+											<option value="1974">1974</option>
+											<option value="1973">1973</option>
+											<option value="1972">1972</option>
+											<option value="1971">1971</option>
+											<option value="1970">1970</option>
+											<option value="1969">1969</option>
+											<option value="1968">1967</option>
+											<option value="1967">1967</option>
+											<option value="1966">1966</option>
+											<option value="1965">1965</option>
+											<option value="1964">1964</option>
+											<option value="1963">1963</option>
+											<option value="1962">1962</option>
+											<option value="1961">1961</option>
+											<option value="1960">1960</option>
+											<option value="1959">1959</option>
+											<option value="1958">1957</option>
+											<option value="1957">1957</option>
+											<option value="1956">1956</option>
+											<option value="1955">1955</option>
+											<option value="1954">1954</option>
+											<option value="1953">1953</option>
+											<option value="1952">1952</option>
+											<option value="1951">1951</option>
+											<option value="1950">1950</option>
+										</select>
+									</div>
+								</div>
+							</div>
+			            </section>
+						<!-- SECTION 2 -->
+			            <h2>
+			            	<span class="step-icon"><i class="zmdi zmdi-check"></i></span>
+			            	<span class="step-text">Other Information</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+								<div class="form-row">
+									<div class="form-holder">
+										<label for="type">Type</label>
+										<input type="text" placeholder="learning or driving" class="form-control input-step-2" id="" name="">
+										
+									</div>
+									<div class="form-holder">
+										<label for="no_of_days_or_kms">No. of days / kms</label>
+										<input type="text" placeholder="1-n" class="form-control input-step-2" id="" name="no_of_days_or_kms">
+										
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="email">Email Address:</label>
+										<input type="email" name="email" class="email input-step-2-1" id="email" placeholder="ex: example@email.com" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="name_on_licence">Name on Licence:</label>
+										<input type="text" placeholder="Name on Licence" class="form-control input-step-2-1" id="name_on_licence" name="name_on_licence">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="licence_number">Licence Number:</label>
+										<input type="text" placeholder="up17 19823456781" class="form-control input-step-2-2" id="licence_number" name="licence_number">
+										<span class="card"><i class="zmdi zmdi-card"></i></span>
+									</div>
+								</div>
+								<div class="form-row form-row-date form-row-step-2">
+									<div class="form-holder form-holder-2">
+										<label for="date_2" class="special-label">Validity:</label>
+										<select name="date_2" id="date_2" class="form-control">
+											<option value="1" selected>1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+											<option value="13">13</option>
+											<option value="14">14</option>
+											<option value="15" >15</option>
+											<option value="16">16</option>
+											<option value="17">17</option>
+											<option value="18">18</option>
+											<option value="19">19</option>
+											<option value="20">20</option>
+											<option value="21">21</option>
+											<option value="22">22</option>
+											<option value="23">23</option>
+											<option value="24">24</option>
+											<option value="25">25</option>
+											<option value="26">26</option>
+											<option value="27">27</option>
+											<option value="28">28</option>
+											<option value="29">29</option>
+											<option value="30">30</option>
+											<option value="31">31</option>
+										</select>
+										<select name="month_2" id="month_2" class="form-control">
+											<option value="Jan" >Jan</option>
+											<option value="Feb">Feb</option>
+											<option value="Mar">Mar</option>
+											<option value="Apr">Apr</option>
+											<option value="May selected">May</option>
+											<option value="Jun">Jun</option>
+											<option value="Jul">Jul</option>
+											<option value="Aug">Aug</option>
+											<option value="Sep">Sep</option>
+											<option value="Oct">Oct</option>
+											<option value="Nov">Nov</option>
+											<option value="Dec">Dec</option>
+										</select>
+										<select name="year_2" id="year_2" class="form-control">
+											<option value="2021" selected>2021</option>
+											<option value="2022" >2022</option>
+											<option value="2023">2023</option>
+											<option value="2024">2024</option>
+											<option value="2025">2025</option>
+											<option value="2026">2026</option>
+											<option value="2027">2027</option>
+											<option value="2028" >2028</option>
+											<option value="2029">2029</option>
+											<option value="2030">2030</option>
+											<option value="2031">2031</option>
+											<option value="2032">2032</option>
+											<option value="2033">2033</option>
+											<option value="2034">2034</option>
+											<option value="2035">2035</option>
+											<option value="2036">2036</option>
+											<option value="2037">2037</option>
+											<option value="2038" >2038</option>
+											<option value="2039">2039</option>
+											<option value="2040">2040</option>
+											<option value="2041">2041</option>
+											<option value="2042">2042</option>
+											<option value="2043">2043</option>
+											<option value="2044">2044</option>
+											<option value="2045">2045</option>
+											<option value="2046">2046</option>
+											<option value="2047">2047</option>
+											<option value="2048" >2048</option>
+											<option value="2049">2049</option>
+											<option value="2050">2050</option>
+											<option value="2051">2051</option>
+											
+										</select>
+									</div>
+								</div>
+							</div>
+			            </section>
+			            <!-- SECTION 3 -->
+			            <h2>
+			            	<span class="step-icon"><i class="zmdi zmdi-check"></i></span>
+			            	<span class="step-text">Confirm Details</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<h3>Comfirm Details</h3>
+								<div class="form-row table-responsive">
+									<table class="table">
+										<tbody>
+											<tr class="space-row">
+												<th>Full Name:</th>
+												<td id="fullname-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Email Address:</th>
+												<td id="email-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Phone Number:</th>
+												<td id="phone-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Address Location:</th>
+												<td id="address-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Gender:</th>
+												<td id="gender-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Name on Licence:</th>
+												<td id="name-on-licence-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>License Number:</th>
+												<td id="licence-number-val"></td>
+											</tr>
+										</tbody>
+									</table>
+									<input type="submit"  value="Pay Now" class="btn">
+								</div>
+							</div>
+			            </section>
+				
+		        	</div>
+			
+		       	 </form>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.steps.js"></script>
+	<script src="js/pay.js"></script>
+</body>
+</html>
